@@ -86,14 +86,14 @@ void Player::resetCardGiven()
 void Player::battleWonIncrement()
 {
 	this->battleWon += 1;
-	Notify();
 	this->setPercentBattleWon();
+	Notify();
 }
 void Player::battleLooseIncrement()
 {
 	this->battleLost += 1;
-	Notify();
 	this->setPercentBattleLost();
+	Notify();
 }
 
 double Player::getPercentWorldControlled()
@@ -113,25 +113,25 @@ double Player::getPercentBattleLost()
 void Player::setPercentBattleWon()
 {
 	this->percentBattleWon = 100 * ((this->battleWon) / (this->battleWon + this->battleLost));
-	Notify();
+	//Notify();
 }
 
 void Player::setPercentBattleLost()
 {
 	this->percentBattleLost = 100 * ((this->battleLost) / (this->battleWon + this->battleLost));
-	Notify();
+	//Notify();
 }
 
 void Player::setPercentWorldControlled()
 {
 	this->percentWorldControlled = (this->totalCountriesControlled / NUMBER_OF_COUNTRIES) * 100;
-	Notify();
+	//Notify();
 }
 
 void Player::CountryControlledIncrement()
 {
 	this->totalCountriesControlled += 1;
-	Notify();
 	setPercentWorldControlled();
+	Notify();
 }
 
