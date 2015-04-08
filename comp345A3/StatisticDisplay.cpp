@@ -22,6 +22,7 @@ StatisticDisplay::~StatisticDisplay()
 
 void StatisticDisplay::update()
 {
+	//called by Notify() when state of subject changes
 	display();
 }
 

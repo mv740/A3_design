@@ -1,23 +1,23 @@
-#include "SubjectStatistic.h"
+#include "StatisticSubject.h"
 #include "StatisticObserver.h"
 
-SubjectStatistic::SubjectStatistic(){
+StatisticSubject::StatisticSubject(){
 	statisticObservers = new list<StatisticObserver*>;
 }
 
-SubjectStatistic::~SubjectStatistic(){
+StatisticSubject::~StatisticSubject(){
 	delete statisticObservers;
 }
 
-void SubjectStatistic::Attach(StatisticObserver* o){
+void StatisticSubject::Attach(StatisticObserver* o){
 	statisticObservers->push_back(o);
 }
 
-void SubjectStatistic::Detach(StatisticObserver* o){
+void StatisticSubject::Detach(StatisticObserver* o){
 	statisticObservers->remove(o);
 }
 
-void SubjectStatistic::Notify(){
+void StatisticSubject::Notify(){
 	list<StatisticObserver *>::iterator i = statisticObservers->begin();
 	for (; i != statisticObservers->end(); ++i)
 		(*i)->update();

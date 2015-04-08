@@ -2,9 +2,13 @@
 #include "StatisticDisplay.h"
 
 
-class StatisticDecorator : public  StatisticDisplay
+class StatisticDecorator : public StatisticDisplay
 {
+
 protected:
+	
+
+private:
 	StatisticDisplay *decoratedStatisticDisplay;
 	//Player *player; 
 	

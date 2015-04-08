@@ -1,3 +1,4 @@
+//Observable
 #pragma once
 #include "StatisticObserver.h"
 #include <list>
@@ -7,13 +8,16 @@ using namespace std;
 //circular reference between Observer and Subject
 class StatisticObserver;
 
-class SubjectStatistic {
+class StatisticSubject {
 public:
 	virtual void Attach(StatisticObserver* o);
 	virtual void Detach(StatisticObserver* o);
 	virtual void Notify();
-	SubjectStatistic();
-	~SubjectStatistic();
+	//StatisticSubject();
+	~StatisticSubject();
+
+protected:
+	StatisticSubject();
 
 private:
 	list<StatisticObserver*> * statisticObservers;

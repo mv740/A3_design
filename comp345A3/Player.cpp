@@ -1,5 +1,6 @@
 #include "Player.h"
 
+//The observable object notifies all its registered observers using Notify()
 
 Player::Player()
 {

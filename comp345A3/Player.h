@@ -1,10 +1,10 @@
 #pragma once
-#include "SubjectStatistic.h"
+#include "StatisticSubject.h"
 #include "Global.h"
 
 //const int NUMBER_OF_COUNTRIES = 10;
 
-class Player : public SubjectStatistic
+class Player : public StatisticSubject
 {
 public:
 	Player();

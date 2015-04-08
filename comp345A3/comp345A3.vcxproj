@@ -19,7 +19,7 @@
     <ClInclude Include="StatisticDecorator.h" />
     <ClInclude Include="StatisticDisplay.h" />
     <ClInclude Include="StatisticObserver.h" />
-    <ClInclude Include="SubjectStatistic.h" />
+    <ClInclude Include="StatisticSubject.h" />
     <ClInclude Include="WorldStats.h" />
   </ItemGroup>
   <ItemGroup>
@@ -32,7 +32,7 @@
     <ClCompile Include="StatisticDecorator.cpp" />
     <ClCompile Include="StatisticDisplay.cpp" />
     <ClCompile Include="StatisticObserver.cpp" />
-    <ClCompile Include="SubjectStatistic.cpp" />
+    <ClCompile Include="StatisticSubject.cpp" />
     <ClCompile Include="WorldStats.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
